@@ -349,10 +349,11 @@ template {
   width: 100%;
   z-index: 99;
   background-color: #131313;
-  padding: 24px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center; }
+  padding: 24px; }
+  .header .menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
 
 .logo {
   color: #E3B873;
