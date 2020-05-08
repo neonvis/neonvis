@@ -12,7 +12,12 @@
     transition: box-shadow 0.3s
     &:hover
      box-shadow: none 
+     background-color: darken($primary, 10)
   &--outline
     border: 1px solid $light
     background-color: transparent
     color: $light
+    transition: background-color, border 0.3s
+    &:hover
+      background-color: darken($primary, 10)
+      border: 1px solid darken($primary, 10)

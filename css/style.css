@@ -331,11 +331,16 @@ template {
     box-shadow: 0 5px 15px rgba(227, 184, 115, 0.2);
     transition: box-shadow 0.3s; }
     .button--primary:hover {
-      box-shadow: none; }
+      box-shadow: none;
+      background-color: #dba249; }
   .button--outline {
     border: 1px solid #ffffff;
     background-color: transparent;
-    color: #ffffff; }
+    color: #ffffff;
+    transition: background-color, border 0.3s; }
+    .button--outline:hover {
+      background-color: #dba249;
+      border: 1px solid #dba249; }
 
 .container {
   width: 85%;
