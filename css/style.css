@@ -421,9 +421,6 @@ body {
   font-size: 1.03rem;
   margin-right: 3rem; }
 
-.contacts__button {
-  margin-right: 1.25rem; }
-
 .hero {
   position: relative;
   display: flex;
@@ -446,14 +443,14 @@ body {
     left: 0;
     top: 0;
     max-width: 80px;
-    height: 100%; }
+    height: 98%; }
   .hero__scroll-down {
     position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
     left: 0;
-    bottom: -1.28rem;
+    bottom: 0.02rem;
     min-width: 17.55rem;
     min-height: 6.93rem;
     padding-left: 0;
@@ -473,21 +470,23 @@ body {
       margin-left: 1.2rem; }
   .hero__title {
     font-size: 2.87rem;
-    margin-top: -1.3rem;
-    margin-bottom: 1.1rem; }
+    margin-top: -2.4rem;
+    margin-bottom: 1rem; }
   .hero__content {
     position: relative;
     max-width: 47.857rem;
-    margin-left: 4.2rem;
+    margin-left: 4.8rem;
     padding-top: 1.1rem; }
   .hero__text {
     font-size: 1.57rem;
     max-width: 35.71rem;
     line-height: 139%;
     margin: 0;
-    margin-bottom: 3.4rem; }
+    margin-bottom: 3.3rem;
+    margin-left: 0.1rem; }
   .hero__button {
-    margin-right: 1.23rem;
+    margin-right: 1rem;
+    margin-left: 0.1rem;
     padding: 1.17rem 1.8rem;
     font-size: 0.96rem; }
   .hero .button--outline {
@@ -518,7 +517,8 @@ body {
   text-transform: uppercase;
   line-height: 3.8rem; }
   .title--primary {
-    color: #E3B873; }
+    color: #E3B873;
+    letter-spacing: -0.45px; }
 
 @media screen and (max-width: 1280px) {
   .nav__menu {
