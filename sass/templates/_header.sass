@@ -5,8 +5,12 @@
   width: 100%
   z-index: 99
   background-color: $dark
-  padding-top: 1.9rem
-  padding-bottom: 1.4rem
+  padding-top: 1.7rem
+  padding-bottom: 1.7rem
+  padding-left: 85px
+  padding-right: 85px
+  &__container
+    width: 100%
   .menu
     display: flex
     justify-content: space-between
@@ -15,12 +19,13 @@
     font-size: 1.02rem
     letter-spacing: 0.02rem
     font-weight: 900
+  .menu__nav
+    margin-left: 1.4rem
 .logo
   color: $primary
   text-transform: uppercase
 .nav
   display: block
-  margin-left: 1.6rem
   &__item
     color: $light  
     text-transform: uppercase
@@ -35,5 +40,6 @@
   &__phone
     font-size: 1.03rem
     margin-right: 3rem
-
+  &__button
+    margin-right: 1.25rem
 
