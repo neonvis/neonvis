@@ -16,7 +16,14 @@
       display: none
     &__content
       margin-left: 0
+    &__text
+      max-width: 100%
 @media screen and ( max-width: 576px )
+  .container
+    width: 90%
+  .header
+    padding-top: 1.7rem
+    padding-bottom: 1.7rem
   .contacts
     &__button
       display: none
@@ -31,14 +38,22 @@
     &__scroll-down
       display: none
     &__content
-      max-width: 22.86rem
+      width: 100%
+    &__title
+      max-width: 26rem
+      margin-top: 6rem
+      font-size: 1.9rem
+      line-height: 140%
     &__text
-      font-size: 1.29rem
-      margin-bottom: 2.28rem 
+      font-size: 1.5rem
+      margin-bottom: 2.6rem 
+      max-width: 100%
     &__button
       display: block
-      min-width: 22.86rem
-      margin-bottom: 1.85rem 
+      height: 4rem
+      width: 100%
+      margin-bottom: 2.45rem 
+      font-size: 1.08rem
 @media screen and ( max-height: 520px )
   .hero
     &__scroll-down

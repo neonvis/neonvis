@@ -319,16 +319,17 @@ template {
   display: none; }
 
 .button {
-  padding: 0.8rem 1.5rem;
+  padding: 0.7rem 1.6rem;
   border: none;
   border-radius: 2px;
   text-transform: uppercase;
-  font-size: 1rem; }
+  font-size: 0.95rem; }
   .button:hover {
     cursor: pointer; }
   .button--primary {
     background-color: #E3B873;
     color: #ffffff;
+    border: 1px solid #E3B873;
     box-shadow: 0 5px 15px rgba(227, 184, 115, 0.2);
     transition: box-shadow 0.3s; }
     .button--primary:hover {
@@ -344,7 +345,7 @@ template {
       border: 1px solid #dba249; }
 
 .container {
-  width: 87%;
+  width: 90%;
   max-width: 1256px;
   margin: auto; }
 
@@ -381,15 +382,15 @@ body {
   width: 100%;
   z-index: 99;
   background-color: #131313;
-  padding-top: 1.5rem;
+  padding-top: 1.9rem;
   padding-bottom: 1.4rem; }
   .header .menu {
     display: flex;
     justify-content: space-between;
     align-items: center; }
   .header .menu__logo {
-    font-size: 1rem;
-    letter-spacing: 0.031rem;
+    font-size: 1.02rem;
+    letter-spacing: 0.02rem;
     font-weight: 900; }
 
 .logo {
@@ -420,7 +421,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-top: 5.6rem;
+  padding-top: 2.6rem;
   background: #131313 url("../img/hero-bg.jpg") no-repeat center/cover;
   height: 100vh;
   color: #ffffff; }
@@ -436,7 +437,7 @@ body {
     position: absolute;
     left: 0;
     top: 0;
-    max-width: 80px;
+    max-width: 100px;
     height: 100%; }
   .hero__scroll-down {
     position: absolute;
@@ -445,8 +446,9 @@ body {
     align-items: center;
     left: 0;
     bottom: 0;
-    min-width: 17.64rem;
+    min-width: 19rem;
     min-height: 6.93rem;
+    padding-left: 0.9rem;
     background-color: #131313;
     font-family: 'Yeseva One', cursive;
     font-size: 0.85rem;
@@ -463,22 +465,24 @@ body {
       margin-left: 1.2rem; }
   .hero__title {
     font-size: 2.87rem;
-    margin-bottom: 1rem; }
+    margin-top: -1.3rem;
+    margin-bottom: 1.1rem; }
   .hero__content {
     position: relative;
     max-width: 47.857rem;
-    margin-left: 3.2rem; }
+    margin-left: 4.6rem; }
   .hero__text {
     font-size: 1.57rem;
     max-width: 35.71rem;
     line-height: 139%;
     margin: 0;
-    margin-bottom: 3.1rem; }
+    margin-bottom: 3.4rem; }
   .hero__button {
     margin-right: 1.23rem;
-    padding: 1.18rem 1.6rem; }
+    padding: 1.17rem 1.8rem;
+    font-size: 0.96rem; }
   .hero .button--outline {
-    padding: 1.3rem 2.9rem; }
+    padding: 1.18rem 3.15rem; }
 
 .instagram {
   display: flex;
@@ -523,9 +527,16 @@ body {
   .hero__instagram {
     display: none; }
   .hero__content {
-    margin-left: 0; } }
+    margin-left: 0; }
+  .hero__text {
+    max-width: 100%; } }
 
 @media screen and (max-width: 576px) {
+  .container {
+    width: 90%; }
+  .header {
+    padding-top: 1.7rem;
+    padding-bottom: 1.7rem; }
   .contacts__button {
     display: none; }
   .contacts__phone {
@@ -538,14 +549,22 @@ body {
   .hero__scroll-down {
     display: none; }
   .hero__content {
-    max-width: 22.86rem; }
+    width: 100%; }
+  .hero__title {
+    max-width: 26rem;
+    margin-top: 6rem;
+    font-size: 1.9rem;
+    line-height: 140%; }
   .hero__text {
-    font-size: 1.29rem;
-    margin-bottom: 2.28rem; }
+    font-size: 1.5rem;
+    margin-bottom: 2.6rem;
+    max-width: 100%; }
   .hero__button {
     display: block;
-    min-width: 22.86rem;
-    margin-bottom: 1.85rem; } }
+    height: 4rem;
+    width: 100%;
+    margin-bottom: 2.45rem;
+    font-size: 1.08rem; } }
 
 @media screen and (max-height: 520px) {
   .hero__scroll-down {
