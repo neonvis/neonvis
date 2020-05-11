@@ -529,6 +529,8 @@ body {
 @media screen and (max-width: 1200px) {
   html {
     font-size: 12px; }
+  .hero__content {
+    margin-left: 5rem; }
   .nav__item {
     margin-right: 1rem; } }
 
