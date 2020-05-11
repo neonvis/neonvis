@@ -564,25 +564,27 @@ body {
   .title {
     font-size: 1.64rem;
     line-height: 2.2rem; }
-  .hero__scroll-down {
-    display: none; }
-  .hero__content {
-    width: 100%; }
-  .hero__title {
-    max-width: 26rem;
-    margin-top: 6rem;
-    font-size: 1.9rem;
-    line-height: 140%; }
-  .hero__text {
-    font-size: 1.5rem;
-    margin-bottom: 2.6rem;
-    max-width: 100%; }
-  .hero__button {
-    display: block;
-    height: 4rem;
-    width: 100%;
-    margin-bottom: 2.45rem;
-    font-size: 1.08rem; } }
+  .hero {
+    max-height: 533px; }
+    .hero__scroll-down {
+      display: none; }
+    .hero__content {
+      width: 100%; }
+    .hero__title {
+      max-width: 26rem;
+      margin-top: 5.2rem;
+      font-size: 1.9rem;
+      line-height: 140%; }
+    .hero__text {
+      font-size: 1.5rem;
+      margin-bottom: 2.6rem;
+      max-width: 100%; }
+    .hero__button {
+      display: block;
+      height: 4rem;
+      width: 100%;
+      margin-bottom: 2.45rem;
+      font-size: 1.08rem; } }
 
 @media screen and (max-height: 520px) {
   .hero__scroll-down {
