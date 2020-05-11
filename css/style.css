@@ -350,9 +350,12 @@ template {
 *, *:before, *:after {
   box-sizing: border-box; }
 
+html {
+  font-size: 14px; }
+
 body {
   font-family: 'Futura Book', sans-serif;
-  font-size: 14px; }
+  font-size: 1rem; }
 
 .section-title {
   text-align: center;
@@ -362,7 +365,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0 10px; }
+    margin: 0 0.72rem; }
     .section-title__image::after, .section-title__image::before {
       content: '';
       width: 32px;
@@ -435,6 +438,7 @@ body {
     min-width: 247px;
     min-height: 97px;
     background-color: #131313;
+    font-family: 'Yeseva One', cursive;
     text-transform: uppercase;
     text-decoration: none;
     color: #ffffff; }
