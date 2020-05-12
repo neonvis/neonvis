@@ -1,3 +1,10 @@
+@media screen and ( min-width: 1280px )
+  .card
+    &__pricetag
+      padding: 1.1rem 5.8rem 1.1rem 2.2rem
+      left: -0.4rem
+      &--repair
+        padding: 1.1rem 2.7rem
 @media screen and ( max-width: 1280px )
   .nav
     &__menu
@@ -66,6 +73,9 @@
   .header
     padding-top: 1.7rem
     padding-bottom: 1.7rem
+  .menu
+    &__logo
+      margin-left: 0
   .contacts
     &__button
       display: none
@@ -76,6 +86,8 @@
   .title
     font-size: 1.64rem
     line-height: 2.2rem
+    &--primary
+      letter-spacing: normal
   .hero
     max-height: 533px
     &__scroll-down
@@ -84,7 +96,7 @@
       width: 100%
     &__title
       max-width: 26rem
-      margin-top: 5.2rem
+      margin-top: 5.3rem
       font-size: 1.9rem
       line-height: 140%
     &__text
@@ -92,12 +104,58 @@
       margin-bottom: 2.65rem
       margin-right: 1.4rem 
       max-width: 100%
+      line-height: 24.1px
     &__button
       display: block
-      height: 4.05rem
+      height: 4.35rem
       width: 100%
-      margin-bottom: 2.45rem 
+      margin-bottom: 2.05rem 
+      margin-left: -0.3px
       font-size: 1.08rem
+  .types
+    &__card
+      margin-bottom: 6.4rem
+      margin-left: 0
+  .card
+    &__text
+      max-width: 22.4rem
+      margin-top: -11.7rem
+      padding: 1.89rem 2.7rem 0.8rem
+      &--mobile
+        max-width: 22.4rem
+        margin-top: -12.1rem
+        padding: 1.67rem 2.8rem 1rem
+    &__item
+      &--hide
+        display: none    
+    &__list
+      &--mobile
+        padding-left: 0.8rem
+        padding-top: 0.3rem
+    &__pricetag
+      bottom: -1.6rem
+      &--repair
+        padding: 0.78rem 2.4rem
+      &--first
+        padding: 0.78rem 2.8rem
+        bottom: -1.8rem
+      &--mobile
+        padding: 0.78rem 3.9rem
+      &--last
+        bottom: -1.4rem
+        padding: 0.78rem 3.8rem
+  .design
+    &__section-title
+      margin-bottom: 1.7rem
+    &__subtitle
+      width: 87.1%
+      font-size: 1.13rem
+      letter-spacing: 0.33px
+      line-height: 154%
+    &__card
+      margin-left: 0  
+      margin-bottom: 6.5rem
+      
 @media screen and ( max-height: 520px )
   .hero
     &__instagram
