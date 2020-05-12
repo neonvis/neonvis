@@ -547,7 +547,6 @@ img {
   max-width: 23.57rem;
   margin: 0 auto;
   margin-top: -9.3rem;
-  margin-right: 12.9%;
   padding: 1.79rem 2.31rem;
   background: #ffffff;
   box-shadow: 10px 10px 20px rgba(19, 19, 19, 0.03); }
@@ -579,6 +578,13 @@ img {
   line-height: 1.85rem;
   text-transform: uppercase;
   padding: 1.08rem 2.6rem; }
+
+@media screen and (max-width: 760px) {
+  .row {
+    flex-direction: column;
+    align-items: center; }
+  .types__card {
+    margin-bottom: 3rem; } }
 
 @media screen and (max-width: 1280px) {
   .nav__menu {
@@ -637,7 +643,8 @@ img {
       line-height: 140%; }
     .hero__text {
       font-size: 1.5rem;
-      margin-bottom: 2.6rem;
+      margin-bottom: 2.7rem;
+      margin-right: 1.4rem;
       max-width: 100%; }
     .hero__button {
       display: block;
