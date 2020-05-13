@@ -6,6 +6,13 @@
   font-display: wrap; }
 
 @font-face {
+  font-family: 'Futura Medium';
+  src: url("../fonts/futura/FuturaMediumC.woff") format("woff"), url("../fonts/futura/FuturaMediumC.woff2") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: wrap; }
+
+@font-face {
   font-family: 'Futura Demi';
   src: url("../fonts/futura/FuturaDemiC.woff") format("woff"), url("../fonts/futura/FuturaDemiC.woff2") format("woff");
   font-weight: normal;
@@ -344,6 +351,50 @@ template {
       background-color: #dba249;
       border: 1px solid #dba249; }
 
+.label {
+  font-size: 1.07rem; }
+  .label--light {
+    color: rgba(255, 255, 255, 0.5); }
+
+.input {
+  border: none;
+  border-bottom: 1px solid rgba(54, 54, 54, 0.3);
+  background: transparent;
+  font-size: 1.29rem;
+  color: #ffffff;
+  padding: 0.5rem 0 0.6rem; }
+  .input::-webkit-input-placeholder {
+    color: #ffffff; }
+  .input::-moz-placeholder {
+    color: #ffffff; }
+  .input:-ms-input-placeholder {
+    color: #ffffff; }
+  .input::-ms-input-placeholder {
+    color: #ffffff; }
+  .input::placeholder {
+    color: #ffffff; }
+
+.policy__checkbox {
+  opacity: 0;
+  visibility: hidden; }
+  .policy__checkbox:checked + .policy__label::before {
+    background: #E3B873 url("../img/check.svg") no-repeat center/0.8rem; }
+
+.policy__label {
+  display: flex;
+  align-items: center;
+  font-size: 1.13rem; }
+  .policy__label::before {
+    content: '';
+    width: 18px;
+    height: 18px;
+    border: 1px solid #E3B873;
+    border-radius: 1px;
+    cursor: pointer;
+    margin-right: 0.65rem;
+    margin-left: 0.15rem;
+    margin-bottom: 0.01rem; }
+
 .container {
   width: 90%;
   max-width: 1256px;
@@ -605,6 +656,58 @@ img {
 
 .design__card {
   margin-left: 2.4%; }
+
+.modal {
+  position: fixed;
+  z-index: 199;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(19, 19, 19, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .modal__dialog {
+    position: relative;
+    max-width: 36.35rem;
+    background: #131313 url("../img/bg-lines.svg") no-repeat center;
+    padding: 2.1rem 3.5rem 2.36rem;
+    color: #ffffff; }
+  .modal__close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 28px;
+    height: 28px;
+    border: none;
+    background: transparent url("../img/close.svg") no-repeat center;
+    margin: 12px;
+    cursor: pointer; }
+  .modal__title {
+    margin: 0;
+    margin-bottom: 1.8rem;
+    font-family: 'Yeseva One', cursive;
+    font-size: 1.36rem;
+    line-height: 2rem;
+    text-align: center; }
+  .modal__form {
+    display: flex;
+    flex-direction: column; }
+  .modal__input {
+    margin-bottom: 2.5em;
+    font-family: 'Futura Medium'; }
+    .modal__input:last-of-type {
+      margin-bottom: -0.3rem; }
+  .modal__policy {
+    margin-bottom: 2.79rem; }
+  .modal__button {
+    align-self: flex-end;
+    font-size: 0.97rem;
+    letter-spacing: 0.15px;
+    padding: 1.2rem 3.3rem; }
 
 @media screen and (min-width: 1280px) {
   .card__pricetag {
