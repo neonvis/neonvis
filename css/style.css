@@ -438,8 +438,8 @@ img {
   width: 100%;
   z-index: 99;
   background-color: #131313;
-  padding-top: 1.7rem;
-  padding-bottom: 1.7rem;
+  padding-top: 1.8rem;
+  padding-bottom: 1.5rem;
   padding-left: 85px;
   padding-right: 85px; }
   .header__container {
@@ -784,7 +784,7 @@ img {
     width: 90%; }
   .header {
     padding-top: 1.7rem;
-    padding-bottom: 1.7rem; }
+    padding-bottom: 1.8rem; }
   .menu__logo {
     margin-left: 0; }
   .contacts__button {
@@ -806,7 +806,7 @@ img {
       width: 100%; }
     .hero__title {
       max-width: 26rem;
-      margin-top: 5.3rem;
+      margin-top: 2.9rem;
       font-size: 1.9rem;
       line-height: 140%; }
     .hero__text {
@@ -820,8 +820,9 @@ img {
       height: 4.35rem;
       width: 100%;
       margin-bottom: 2.05rem;
-      margin-left: -0.3px;
-      font-size: 1.08rem; }
+      margin-left: -0.2px;
+      font-size: 1.08rem;
+      letter-spacing: 0.3px; }
   .types__card {
     margin-bottom: 6.4rem;
     margin-left: 0; }
