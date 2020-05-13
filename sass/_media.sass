@@ -6,6 +6,10 @@
       &--repair
         padding: 1.1rem 2.7rem
 @media screen and ( max-width: 1280px )
+  .header
+    &__container
+      width: 100%
+      margin: auto
   .nav
     &__menu
       margin-left: 0
@@ -40,6 +44,11 @@
   .card
     &__text
       max-width: 96%
+@media screen and ( min-width: 761px) and ( max-width: 992px ) 
+  .card
+    &__text
+      &--repair
+        min-height: 25rem
 @media screen and ( max-width: 760px )
   .section-title
     margin-bottom: 3.3rem
@@ -73,16 +82,18 @@
   .header
     padding-top: 1.7rem
     padding-bottom: 1.8rem
+    &__container
+      width: 95.5%
   .menu
     &__logo
-      margin-left: 0
+      margin-left: 0.88rem
   .contacts
     &__button
       display: none
     &__phone
       text-decoration: none
       color: $light
-      margin-right: 0
+      margin-right: 0.7rem 
   .title
     font-size: 1.64rem
     line-height: 2.2rem
@@ -113,6 +124,8 @@
       margin-left: -0.2px
       font-size: 1.08rem
       letter-spacing: 0.3px
+      &--outline
+        font-size: 1.03rem
   .types
     &__card
       margin-bottom: 6.4rem
@@ -120,7 +133,7 @@
   .card
     &__text
       max-width: 22.4rem
-      margin-top: -11.7rem
+      margin-top: -11.75rem
       padding: 1.89rem 2.7rem 0.8rem
       &--mobile
         max-width: 22.4rem
@@ -139,7 +152,9 @@
         padding: 0.78rem 2.4rem
       &--first
         padding: 0.78rem 2.8rem
-        bottom: -1.8rem
+        bottom: -1.55rem
+      &--second
+        padding: 0.78rem 2.6rem
       &--mobile
         padding: 0.78rem 3.9rem
       &--last
@@ -156,7 +171,6 @@
     &__card
       margin-left: 0  
       margin-bottom: 6.5rem
-      
 @media screen and ( max-height: 520px )
   .hero
     &__instagram
