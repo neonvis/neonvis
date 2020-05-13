@@ -13,4 +13,20 @@ document.addEventListener("DOMContentLoaded", function(event) {
   
   closeBtn.addEventListener('click', switchModal);
 
+
+  window.onclick = function(event) {
+    if (event.target == modal) {
+      modal.classList.toggle('modal--visible');
+    }
+  };
+
+  document.body.addEventListener('keyup', function (e) {
+    var key = e.keyCode;
+
+    if (key == 27) {
+      modal.classList.toggle('modal--visible');
+    }
+  }, false);
+
 });
+
