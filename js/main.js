@@ -1,3 +1,4 @@
+/*
 document.addEventListener("DOMContentLoaded", function(event) { 
 
   const modal = document.querySelector('.modal');
@@ -29,4 +30,40 @@ document.addEventListener("DOMContentLoaded", function(event) {
   }, false);
 
 });
+*/
 
+
+$(document).ready(function () {
+  var modal = $('.modal'),
+    modalBtn = $('[data-toggle=modal]'),
+    closeBtn = $('.modal__close'),
+    upScroll = $('.scroll-up');
+
+  // присваивает кнопке класс show
+  $(window).scroll(function () {
+    if ($(window).scrollTop() > 1000) {
+      upScroll.addClass('show');
+    } else {
+      upScroll.removeClass('show');
+    }
+  });
+
+  // скрипт плавной прокрутки
+  $(document).on('click', '.scroll-up', function (e) {
+    e.preventDefault();
+    $('body, html').animate({scrollTop: 0}, 800);
+  });
+
+
+
+  modalBtn.on('click', function () {
+    modal.toggleClass('modal--visible');
+  });
+
+  closeBtn.on('click', function () {
+    modal.toggleClass('modal--visible');
+  });
+
+});
+
+ 
