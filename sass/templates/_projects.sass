@@ -1,0 +1,57 @@
+.projects
+  background: $dark url('../img/big-lines.png') no-repeat center
+  color: $light
+  position: relative
+.bg-town
+  position: absolute
+  width: 45%
+  max-width: 811px
+  height: 30vh
+  max-height: 364px
+  opacity: 0.2
+  &--left
+    bottom: 0
+    left: 0
+  &--right
+    bottom: 0
+    right: 0
+.swiper
+  &-slide
+    display: flex
+    flex-wrap: wrap
+    &__text
+      flex-basis: 50%
+      margin-bottom: 2.42rem
+      padding-bottom: 2rem
+    &__heading
+      font-size: 1.285rem
+      line-height: 1.78rem
+      font-family: 'Yeseva One', cursive
+      text-transform: uppercase
+      color: $primary
+      margin-bottom: 0.64rem
+  &-pagination
+    &-bullet
+      background-color: rgba($light, 0.3)
+      &-active
+        background-color: $light
+  &-button
+    &-prev, &-next
+      bottom: 0
+      top: auto
+      background-size: 42px
+      width: 42px
+      height: 14px
+      &::after
+        display: none
+    &-prev
+      background: url('../img/arrow-prev.svg') no-repeat center
+      left: 0
+    &-next
+      background: url('../img/arrow-next.svg') no-repeat center
+.swiper-container-horizontal>.swiper-pagination-bullets
+  width: auto
+  bottom: -2px
+
+      
+    
