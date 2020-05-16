@@ -61,6 +61,22 @@ $(document).ready(function () {
   closeBtn.on('click', function () {
     modal.toggleClass('modal--visible');
   });
+  
+  $(closeBtn).click(function () {
+    modal.toggleClass('modal--visible');
+  });
+
+  $('.modal').click(function () {
+    modal.toggleClass('modal--visible');
+  });
+
+  $(window).on('keyup', function(e) {
+    var key = e.keyCode;
+
+      if (key == 27) {
+        modal.toggleClass('modal--visible');
+      }
+  });
 
   var mySwiper = new Swiper ('.swiper-container', {
     loop: true,
