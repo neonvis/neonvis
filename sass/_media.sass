@@ -1,34 +1,35 @@
 @media screen and ( min-width: 1440px ) 
+  .header
+    padding-top: 1.8rem
+    padding-bottom: 1.5rem
+    .menu
+      margin-left: -0.6em
   .card
     &__text
       &--repair
-        margin-left: 2.1rem
+        margin-left: 2.2rem
         padding-top: 2rem
-        margin-top: -9.1rem
+        margin-top: -9.3rem
+        font-size: 1.28rem
       &--design
         margin-right: 2.3rem
-        margin-top: -9.1rem
+        margin-top: -8.9rem
         padding-left: 2.32rem
-        padding-bottom: 1.42rem
-      &--repair
-        margin-left: 0.5rem
-        font-size: 1.28rem
+        padding-bottom: 1.82rem
+        &-last
+          padding-bottom: 2.02rem
     &__list
       &--repair
         font-size: 1.09rem
       &--design
-        line-height: 1.86rem
-        font-size: 1.1rem
+        line-height: 25.09px
+        font-size: 1.09rem
 @media screen and ( min-width: 376px ) and ( max-width: 1439px) 
   .card
     &__text
       &--repair
         margin-left: auto
 @media screen and ( max-width: 1280px )
-  .header
-    &__container
-      width: 100%
-      margin: auto
   .nav
     &__menu
       margin-left: 0
@@ -36,6 +37,22 @@
       margin-right: 1.8rem
   .col
     flex-basis: 32%
+  .section-title
+    &__heading
+      &--projects
+        font-size: 1.6rem
+  .swiper
+    &-slide
+      &__description
+        padding-bottom: 4.9rem
+      &__text
+        flex-basis: 45%
+        margin-left: -1rem
+        margin-right: 2rem
+      &__heading
+        font-size: 1.2rem
+        font-weight: 500
+        margin-top: 0
 @media screen and ( max-width: 1200px )
   html
     font-size: 12px
@@ -63,6 +80,10 @@
   .card
     &__text
       max-width: 96%
+  .section-title
+    &__text
+      &--projects
+        font-size: 1.15rem
 @media screen and ( min-width: 761px) and ( max-width: 992px ) 
   .card
     &__text
@@ -107,20 +128,19 @@
   .container
     width: 90%
   .header
-    padding-top: 1.7rem
+    padding-top: 1.5rem
     padding-bottom: 1.8rem
-    &__container
-      width: 95.5%
   .menu
     &__logo
-      margin-left: 0.88rem
+      margin-left: 0.58rem
   .contacts
     &__button
       display: none
     &__phone
       text-decoration: none
       color: $light
-      margin-right: 0.7rem 
+      margin-right: 0
+      margin-top: 0.2rem
   .title
     font-size: 1.64rem
     line-height: 2.2rem
@@ -153,6 +173,34 @@
       letter-spacing: 0.3px
       &--outline
         font-size: 1.03rem
+        padding-bottom: 1rem
+  .projects
+    padding-top: 2.8rem
+  .col-50
+    flex-basis: 100%
+    width: 100%
+    padding-left: 0
+    &__text
+      margin-bottom: 2.7rem
+  .swiper-container
+    max-height: 203px
+  .swiper-slide
+    margin: 0
+    &__description
+      flex-basis: 100%
+      margin-top: -14.3px
+      padding-right: 1rem
+      padding-bottom: 3.6rem
+    &__text
+      margin-right: 4.5%
+      margin-left: 0.5%
+      margin-bottom: 1.1rem
+      flex-basis: 45%
+    &__heading
+      margin-bottom: 0.6rem
+      letter-spacing: -0.3px
+    &__value
+      font-size: 1.15rem
   .types
     &__section-title
       margin-bottom: 3.4rem
@@ -161,7 +209,20 @@
       margin-left: 0
       margin-right: 0
   .section-title
+    &__text
+      &--projects
+        font-size: 1.15rem
+        letter-spacing: 0.1px
+        padding-right: 3rem
+    &__word
+      &::after
+        display: none
     &__heading
+      &--projects
+        font-size: 1.75rem
+        font-weight: 400
+        letter-spacing: -0.8px
+        margin-bottom: 2.1rem
       &--repair
         margin-bottom: 2.1rem
         margin-top: -0.7rem
@@ -179,13 +240,15 @@
       &--repair
         max-width: 22.4rem
         margin-top: -12.2rem
-        padding: 1.77rem 1.9rem 1rem 2.1rem
+        padding: 1.81rem 1.9rem 1rem 2.1rem
       &--repair-second
         margin-top: -11.6rem
       &--repair-last
         margin-top: -11.8rem
       &--design
-        margin-top: -12.1rem
+        margin-top: -11.99rem
+        &-last
+          margin-top: -12.1rem
       &--design-first
         padding-top: 1.65rem
         padding-bottom: 1.05rem

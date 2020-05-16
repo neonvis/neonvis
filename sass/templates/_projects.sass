@@ -2,13 +2,14 @@
   background: $dark url('../img/big-lines.png') no-repeat center
   color: $light
   position: relative
+  padding-top: 12.4rem
 .bg-town
   position: absolute
   width: 45%
   max-width: 811px
   height: 30vh
   max-height: 364px
-  opacity: 0.2
+  opacity: 0.1
   &--left
     bottom: 0
     left: 0
@@ -19,20 +20,31 @@
   &-slide
     display: flex
     flex-wrap: wrap
+    &__description
+      margin-top: 1rem
+      padding-right: 6rem
+      padding-bottom: 6.9rem
     &__text
       flex-basis: 50%
-      margin-bottom: 2.42rem
-      padding-bottom: 2rem
+      margin-bottom: 0.32rem
+      padding-top: 1.1rem
+    &__value
+      display: block
+      font-size: 1.1rem
+      line-height: 142%
     &__heading
       font-size: 1.285rem
       line-height: 1.78rem
       font-family: 'Yeseva One', cursive
       text-transform: uppercase
       color: $primary
-      margin-bottom: 0.64rem
+      margin-bottom: 0.3rem
+    &__photo
+      // margin-right: 1rem
   &-pagination
     &-bullet
       background-color: rgba($light, 0.3)
+      margin: 0 8px
       &-active
         background-color: $light
   &-button
@@ -51,7 +63,11 @@
       background: url('../img/arrow-next.svg') no-repeat center
 .swiper-container-horizontal>.swiper-pagination-bullets
   width: auto
-  bottom: -2px
+  bottom: 0
+.swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet
+  margin: 0 10px
+.swiper-container-android .swiper-slide, .swiper-wrapper
+  transform: translate3d(-454px, 0px, 0px)
 
       
     
