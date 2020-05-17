@@ -414,7 +414,7 @@ template {
     padding-left: 0.8rem;
     width: 38%; }
   .col-50__img {
-    width: 58.4%;
+    width: 54%;
     margin-right: 0.78rem; }
 
 *, *:before, *:after {
@@ -485,7 +485,7 @@ img {
   background-color: rgba(19, 19, 19, 0.6); }
 
 .img__wrapper--projects {
-  max-width: 500px; }
+  max-width: 677px; }
 
 .img__wrapper--design {
   position: relative;
@@ -564,17 +564,18 @@ img {
     margin-left: -0.6em; }
 
 .menu__logo {
+  margin-left: 3.5px; }
+
+.menu__link {
+  text-decoration: none;
   font-size: 1.02rem;
   letter-spacing: 0.026rem;
   font-weight: 900;
-  margin-left: 3.5px; }
+  color: #E3B873;
+  text-transform: uppercase; }
 
 .menu__nav {
   margin-left: 0.9rem; }
-
-.logo {
-  color: #E3B873;
-  text-transform: uppercase; }
 
 .nav {
   display: block; }
@@ -652,7 +653,8 @@ img {
     text-transform: uppercase;
     text-decoration: none;
     color: #ffffff;
-    z-index: 3; }
+    z-index: 3;
+    transition: background-color 0.1s; }
     .hero__scroll-down::after {
       content: '';
       background: url("../img/arrow-down.svg") no-repeat center;
@@ -978,6 +980,14 @@ img {
   .card__text--repair {
     margin-left: auto; } }
 
+@media screen and (min-width: 993px) and (max-width: 1439px) {
+  .row__projects {
+    align-items: center; }
+  .swiper-slide__text {
+    flex-basis: 45%;
+    margin-left: 1%;
+    margin-right: 4%; } }
+
 @media screen and (max-width: 1280px) {
   .nav__menu {
     margin-left: 0; }
@@ -989,10 +999,6 @@ img {
     font-size: 1.6rem; }
   .swiper-slide__description {
     padding-bottom: 4.9rem; }
-  .swiper-slide__text {
-    flex-basis: 45%;
-    margin-left: -1rem;
-    margin-right: 2rem; }
   .swiper-slide__heading {
     font-size: 1.2rem;
     font-weight: 500;
@@ -1005,6 +1011,28 @@ img {
     margin-left: 5rem; }
   .nav__item {
     margin-right: 1rem; } }
+
+@media screen and (min-width: 993px) {
+  .menu__link {
+    transition: color 0.1s; }
+    .menu__link:hover {
+      color: #ffffff; }
+  .phone {
+    transition: color 0.1s; }
+    .phone:hover {
+      color: #ffffff; }
+  .instagram__link {
+    transition: color 0.1s; }
+    .instagram__link::after {
+      transition: color 0.1s; }
+    .instagram__link:hover {
+      color: #ffffff; }
+      .instagram__link:hover::after {
+        background-color: #ffffff; }
+  .hero__scroll-down {
+    transition: background-color 0.1s; }
+    .hero__scroll-down:hover {
+      background-color: #181818; } }
 
 @media screen and (max-width: 992px) {
   .header {
@@ -1030,6 +1058,42 @@ img {
     min-height: 25rem; }
   .card__pricetag {
     font-size: 1.15rem; } }
+
+@media screen and (min-width: 577px) and (max-width: 992px) {
+  .projects {
+    padding-top: 8rem; }
+  .row__projects {
+    flex-wrap: wrap; }
+  .col-50 {
+    flex-basis: 100%;
+    width: 100%;
+    padding-left: 0; }
+    .col-50__text {
+      margin-bottom: 2.7rem; }
+  .swiper-container {
+    max-height: 359px; }
+  .swiper-slide {
+    margin: 0; }
+    .swiper-slide__description {
+      flex-basis: 100%;
+      margin-top: -14.3px;
+      padding-right: 1rem;
+      padding-bottom: 3.6rem;
+      padding-top: 2rem; }
+    .swiper-slide__text {
+      margin-right: 4.5%;
+      margin-left: 0.5%;
+      margin-bottom: 1.1rem;
+      flex-basis: 45%; }
+    .swiper-slide__heading {
+      margin-bottom: 0.6rem;
+      letter-spacing: -0.3px; }
+    .swiper-slide__value {
+      font-size: 1.15rem; } }
+
+@media screen and (min-width: 577px) and (max-width: 992px) {
+  .swiper-container {
+    max-height: 359px; } }
 
 @media screen and (max-width: 760px) {
   .section-title {
@@ -1124,7 +1188,8 @@ img {
       flex-basis: 100%;
       margin-top: -14.3px;
       padding-right: 1rem;
-      padding-bottom: 3.6rem; }
+      padding-bottom: 3.6rem;
+      padding-top: 0; }
     .swiper-slide__text {
       margin-right: 4.5%;
       margin-left: 0.5%;

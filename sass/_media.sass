@@ -29,6 +29,15 @@
     &__text
       &--repair
         margin-left: auto
+@media screen and ( min-width: 993px ) and ( max-width: 1439px) 
+  .row
+    &__projects
+      align-items: center
+  .swiper-slide
+    &__text
+      flex-basis: 45%
+      margin-left: 1%
+      margin-right: 4%
 @media screen and ( max-width: 1280px )
   .nav
     &__menu
@@ -45,10 +54,6 @@
     &-slide
       &__description
         padding-bottom: 4.9rem
-      &__text
-        flex-basis: 45%
-        margin-left: -1rem
-        margin-right: 2rem
       &__heading
         font-size: 1.2rem
         font-weight: 500
@@ -62,6 +67,30 @@
   .nav
     &__item
       margin-right: 1rem
+@media screen and ( min-width: 993px)
+  .menu
+    &__link
+      transition: color 0.1s
+      &:hover
+        color: $light
+  .phone
+    transition: color 0.1s
+    &:hover
+      color: $light
+  .instagram
+    &__link
+      transition: color 0.1s
+      &::after
+        transition: color 0.1s
+      &:hover
+        color: $light
+        &::after
+          background-color: $light
+  .hero
+    &__scroll-down
+      transition: background-color 0.1s
+      &:hover
+        background-color: lighten($dark, 2)
 @media screen and ( max-width: 992px )
   .header
     padding-left: 0
@@ -91,6 +120,41 @@
         min-height: 25rem
     &__pricetag
       font-size: 1.15rem
+@media screen and ( min-width: 577px) and ( max-width: 992px ) 
+  .projects
+    padding-top: 8rem
+  .row
+    &__projects
+      flex-wrap: wrap
+  .col-50
+    flex-basis: 100%
+    width: 100%
+    padding-left: 0
+    &__text
+      margin-bottom: 2.7rem
+  .swiper-container
+    max-height: 359px
+  .swiper-slide
+    margin: 0
+    &__description
+      flex-basis: 100%
+      margin-top: -14.3px
+      padding-right: 1rem
+      padding-bottom: 3.6rem
+      padding-top: 2rem
+    &__text
+      margin-right: 4.5%
+      margin-left: 0.5%
+      margin-bottom: 1.1rem
+      flex-basis: 45%
+    &__heading
+      margin-bottom: 0.6rem
+      letter-spacing: -0.3px
+    &__value
+      font-size: 1.15rem
+@media screen and ( min-width: 577px) and ( max-width: 992px )
+  .swiper-container
+    max-height: 359px 
 @media screen and ( max-width: 760px )
   .section-title
     margin-bottom: 3.3rem
@@ -191,6 +255,7 @@
       margin-top: -14.3px
       padding-right: 1rem
       padding-bottom: 3.6rem
+      padding-top: 0
     &__text
       margin-right: 4.5%
       margin-left: 0.5%
