@@ -19,3 +19,13 @@
   .col-50__img {
     width: 54%;
     margin-right: 0.78rem; }
+
+.col-30 {
+  width: 50%;
+  z-index: 9; }
+  .col-30__text {
+    padding-left: 0.8rem;
+    width: 38%; }
+  .col-30__img {
+    width: 54%;
+    margin-right: 0.78rem; }

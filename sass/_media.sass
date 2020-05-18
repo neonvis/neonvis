@@ -24,6 +24,9 @@
       &--design
         line-height: 25.09px
         font-size: 1.09rem
+  .control
+    &__policy-label
+      margin-left: -4.9rem
 @media screen and ( min-width: 376px ) and ( max-width: 1439px) 
   .card
     &__text
@@ -92,6 +95,20 @@
       &:hover
         background-color: lighten($dark, 2)
 @media screen and ( max-width: 992px )
+  .menu
+    &__link
+      transition: color 0.1s
+      &:hover
+        color: $light
+  .phone
+    transition: color 0.1s
+    &:hover
+      color: $light
+  .hero
+    &__scroll-down
+      transition: background-color 0.1s
+      &:hover
+        background-color: lighten($dark, 2)
   .header
     padding-left: 0
     padding-right: 0
@@ -188,6 +205,62 @@
   .types
     &__card
       margin-bottom: 6.4rem
+  .control
+    background: $dark
+    padding-bottom: 3.7rem
+    &__input-group
+      flex-basis: 100%
+      &--name
+        margin-bottom: 5.2rem
+      &--phone
+        margin-bottom: 1rem
+    &__input
+      &::placeholder
+        color: rgba($light, 1)
+        font-size: 1.49rem
+    &__label
+      color: rgba($light, 0.5)
+      font-size: 1.2rem
+      margin-bottom: -0.2rem
+    &__section-title
+      margin-top: -25rem
+    &__video
+      min-height: 24rem
+      margin-bottom: 2.3rem
+    &__text
+      font-size: 1.19rem
+      max-width: 33.9rem
+      letter-spacing: -0.14px
+      line-height: 169%
+      margin-bottom: 2.6rem
+      color: $light
+      font-weight: 200
+      &::before
+        margin-bottom: 1.2rem
+    &__button
+      order: 5
+      font-size: 1.2rem
+      letter-spacing: 0.9px
+      padding: 1.4rem 10.6rem 1.3rem 10.7rem
+      margin-bottom: -2.1rem
+    &__policy
+      color: $light
+      margin: 0
+      margin-bottom: 5.2rem
+    &__policy-label
+      justify-content: flex-start
+      margin-left: -0.2rem
+      letter-spacing: 0.8px
+      font-size: 1.2rem
+  .video
+    &__play
+      width: 64px
+      margin: auto
+      margin-bottom: 68.3px
+  .types
+    margin-top: -2.3rem
+    
+     
 @media screen and ( max-width: 576px )
   .container
     width: 90%
@@ -270,7 +343,7 @@
     &__section-title
       margin-bottom: 3.4rem
     &__card
-      margin-bottom: 6.4rem
+      margin-bottom: 6.2rem
       margin-left: 0
       margin-right: 0
   .section-title
@@ -289,7 +362,7 @@
         letter-spacing: -0.8px
         margin-bottom: 2.1rem
       &--repair
-        margin-bottom: 2.1rem
+        margin-bottom: 1.8rem
         margin-top: -0.7rem
     &__image
       &--repair
@@ -304,8 +377,8 @@
       padding: 1.89rem 2.7rem 0.8rem
       &--repair
         max-width: 22.4rem
-        margin-top: -12.2rem
-        padding: 1.81rem 1.9rem 1rem 2.1rem
+        margin-top: -12rem
+        padding: 2.01rem 1.9rem 1rem 2.1rem
       &--repair-second
         margin-top: -11.6rem
       &--repair-last
@@ -331,9 +404,9 @@
         bottom: -1.55rem
         letter-spacing: normal
       &--second
-        padding: 0.78rem 2.7rem 0.68rem 2.6rem
+        padding: 0.88rem 2.6rem 0.78rem 2.6rem
         letter-spacing: normal
-        margin-bottom: 0
+        margin-bottom: 0.1rem
       &--third
         bottom: -1.6rem
         padding: 0.78rem 2.4rem 0.78rem 2.4rem
@@ -366,6 +439,9 @@
     &__wrapper
       &::after
         opacity: 0
+  .control
+    &__video
+      min-height: 17.4rem
 @media screen and ( max-height: 520px )
   .hero
     &__instagram

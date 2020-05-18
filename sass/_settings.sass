@@ -12,8 +12,19 @@ img
   &-title
     text-align: center
     font-family: 'Yeseva One', cursive
+    &--light
+      color: $light
     &__text
       &--projects
+        font-size: 1.28rem
+        line-height: 161%
+        max-width: 31.57rem
+        text-align: left
+        letter-spacing: normal
+        font-family: 'Futura Book'
+        margin: 0
+        margin-top: 1.6rem
+      &--steps
         font-size: 1.28rem
         line-height: 161%
         max-width: 31.57rem
@@ -26,6 +37,11 @@ img
       text-transform: uppercase
       font-weight: 400
       &--projects
+        color: $primary
+        text-align-last: left
+        line-height: 147%
+        font-size: 1.8rem
+      &--steps
         color: $primary
         text-align-last: left
         line-height: 147%
@@ -50,15 +66,6 @@ img
         border-radius: 1px
         background-color: $primary
         margin: 0 0.6rem
-.overlay
-  position: absolute
-  width: 100%
-  height: 100%
-  left: 0
-  top: 0
-  right: 0
-  bottom: 0
-  background-color: rgba($dark, 0.6)
 .img
   &__wrapper
     &--projects
