@@ -1306,21 +1306,23 @@ img {
         margin-bottom: 5.2rem; }
       .control__input-group--phone {
         margin-bottom: 1rem; }
-    .control__input::-webkit-input-placeholder {
-      color: white;
-      font-size: 1.49rem; }
-    .control__input::-moz-placeholder {
-      color: white;
-      font-size: 1.49rem; }
-    .control__input:-ms-input-placeholder {
-      color: white;
-      font-size: 1.49rem; }
-    .control__input::-ms-input-placeholder {
-      color: white;
-      font-size: 1.49rem; }
-    .control__input::placeholder {
-      color: white;
-      font-size: 1.49rem; }
+    .control__input {
+      border-bottom-color: #ffffff; }
+      .control__input::-webkit-input-placeholder {
+        color: white;
+        font-size: 1.49rem; }
+      .control__input::-moz-placeholder {
+        color: white;
+        font-size: 1.49rem; }
+      .control__input:-ms-input-placeholder {
+        color: white;
+        font-size: 1.49rem; }
+      .control__input::-ms-input-placeholder {
+        color: white;
+        font-size: 1.49rem; }
+      .control__input::placeholder {
+        color: white;
+        font-size: 1.49rem; }
     .control__label {
       color: rgba(255, 255, 255, 0.5);
       font-size: 1.2rem;
