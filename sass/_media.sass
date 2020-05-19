@@ -27,6 +27,17 @@
   .control
     &__policy-label
       margin-left: -4.9rem
+  .footer
+    &__wrap
+      margin-left: 14rem
+    &__input-group
+      margin-right: -0.1rem
+    &__policy
+      margin-left: -1.4rem
+  .menu
+    &__contacts
+      &--bottom
+        margin-right: -0.4rem
 @media screen and ( min-width: 376px ) and ( max-width: 1439px) 
   .card
     &__text
@@ -262,6 +273,43 @@
     margin-top: -2.3rem
     
      
+@media screen and ( max-width: 640px )
+  .footer
+    background: $black-mobile
+    &__menu
+      display: none
+    &__input-group
+      flex-basis: 100%
+      margin-bottom: 5.3rem
+      &--full-width
+        margin-bottom: 1.9rem
+    &__wrap
+      background-color: $black-mobile
+      margin-top: 0
+      padding-left: 0
+      padding-right: 0
+    &__title
+      letter-spacing: 0.16rem
+      margin-bottom: 4.7rem
+      font-weight: normal
+    &__label
+      font-size: 1.16rem
+      margin-bottom: -0.5rem
+    &__input
+      font-size: 1.48rem
+      border-color: $light
+    &__policy
+      justify-content: flex-start
+      margin-left: -1.2rem
+      margin-bottom: 5.7rem
+    &__button
+      padding: 1.5rem 11.1rem 1.2rem
+  .policy
+    &__label
+      &--mobile
+        font-size: 1.2rem
+        letter-spacing: 0.8px 
+  
 @media screen and ( max-width: 576px )
   .container
     width: 90%

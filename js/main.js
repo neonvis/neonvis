@@ -102,15 +102,15 @@ $(document).ready(function () {
  
   new WOW().init();
 
-  $(window).scroll(function (){
-    $(' .card').each(function (){
-        var elPos = $(this).offset().top;
-        var topOfWindow = $(window).scrollTop();
-        if (elPos < topOfWindow+550) {
-            $(this).addClass('fadeInUp');
-        }
-    });
-});
+  // $(window).scroll(function (){
+  //   $(' .card').each(function (){
+  //       var elPos = $(this).offset().top;
+  //       var topOfWindow = $(window).scrollTop();
+  //       if (elPos < topOfWindow+550) {
+  //           $(this).addClass('fadeInUp');
+  //       }
+  //   });
+  // });
 
 });
 
