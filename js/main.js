@@ -54,21 +54,21 @@ $(document).ready(function () {
     $('body, html').animate({scrollTop: 0}, 800);
   });
 
-  modalBtn.on('click', function () {
-    modal.toggleClass('modal--visible');
-  });
-
-  closeBtn.on('click', function () {
+  $(modalBtn).click(function () {
     modal.toggleClass('modal--visible');
   });
   
   $(closeBtn).click(function () {
     modal.toggleClass('modal--visible');
   });
-
-  $('.modal').click(function () {
-    modal.toggleClass('modal--visible');
+  
+  $(".modal").on('click', function (e) {
+    
+    if (e.target == this) {
+      modal.toggleClass('modal--visible');
+    }
   });
+
 
   $(window).on('keyup', function(e) {
     var key = e.keyCode;
@@ -111,6 +111,96 @@ $(document).ready(function () {
   //       }
   //   });
   // });
+
+  $('.modal__form').validate({
+    errorElement: "div",
+    errorClass: "invalid",
+    rules: {
+      userName: {
+        required: true,
+        minlength: 2,
+        maxlength: 15
+      },
+      userPhone: "required",
+      userEmail: {
+        required: true,
+        email: true
+      }
+    },
+    messages: {
+      userName: {
+        required: "Заполните поле",
+        minlength: "Имя не короче двух букв",
+        maxlength: "Имя не более 15 букв",
+      },
+      userPhone: "Заполните поле",
+      userEmail: {
+        required: "Заполните поле",
+        email: "Введите корректный Email"
+      }
+    }
+  });
+
+  $('.footer__form').validate({
+    errorElement: "div",
+    errorClass: "invalid",
+    rules: {
+      userName: {
+        required: true,
+        minlength: 2,
+        maxlength: 15
+      },
+      userPhone: "required",
+      userEmail: {
+        required: true,
+        email: true
+      }
+    },
+    messages: {
+      userName: {
+        required: "Заполните поле",
+        minlength: "Имя не короче двух букв",
+        maxlength: "Имя не более 15 букв",
+      },
+      userPhone: "Заполните поле",
+      userEmail: {
+        required: "Заполните поле",
+        email: "Введите корректный Email"
+      }
+    }
+  });
+
+  $('.control__form').validate({
+    errorElement: "div",
+    errorClass: "invalid",
+    rules: {
+      userName: {
+        required: true,
+        minlength: 2,
+        maxlength: 15
+      },
+      userPhone: "required",
+      userEmail: {
+        required: true,
+        email: true
+      }
+    },
+    messages: {
+      userName: {
+        required: "Заполните поле",
+        minlength: "Имя не короче двух букв",
+        maxlength: "Имя не более 15 букв",
+      },
+      userPhone: "Заполните поле",
+      userEmail: {
+        required: "Заполните поле",
+        email: "Введите корректный Email"
+      }
+    }
+  });
+
+  // маска для тел
+  $('[type=tel]').mask('+7 (000) 000-00-00', {placeholder: "+7(___)___-__-__"});
 
 });
 
