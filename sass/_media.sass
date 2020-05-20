@@ -33,7 +33,7 @@
     &__input-group
       margin-right: -0.1rem
     &__policy
-      margin-left: -1.4rem
+      margin-left: 2.1rem
   .menu
     &__contacts
       &--bottom
@@ -72,6 +72,9 @@
         font-size: 1.2rem
         font-weight: 500
         margin-top: 0
+  .video
+    &__play
+      margin: auto
 @media screen and ( max-width: 1200px )
   html
     font-size: 12px
@@ -105,6 +108,7 @@
       transition: background-color 0.1s
       &:hover
         background-color: lighten($dark, 2)
+
 @media screen and ( max-width: 992px )
   .menu
     &__link
@@ -116,6 +120,7 @@
     &:hover
       color: $light
   .hero
+    background-color: $black-mobile
     &__scroll-down
       transition: background-color 0.1s
       &:hover
@@ -123,6 +128,7 @@
   .header
     padding-left: 0
     padding-right: 0
+    background-color: $black-mobile
   .container
     width: 90%
   .nav
@@ -137,10 +143,45 @@
   .card
     &__text
       max-width: 96%
+  .projects
+    background: $black-mobile
+    &__overlay
+      display: none
   .section-title
     &__text
       &--projects
         font-size: 1.15rem
+  .footer
+    background-color: $black-mobile
+    &__wrap
+      margin-bottom: 1.414rem
+      background: $black-mobile
+    &__block
+      display: flex
+      flex-wrap: wrap
+    &__map
+      flex-basis: 100%
+      order: 1
+      min-height: 255px
+      min-width: 340px
+      margin-bottom: 2rem
+    &__info
+      flex-basis: 100%
+      order: 2
+      padding: 0 0.8rem
+    &__text
+      letter-spacing: 0.6px
+      margin-bottom: 1.9rem
+    &__img
+      width: 40px
+    &__menu
+      display: none
+    &__links
+      &:first-of-type
+        margin-right: -0.3rem
+  .scroll-up
+    bottom: 60px
+
 @media screen and ( min-width: 761px) and ( max-width: 992px ) 
   .card
     &__text
@@ -211,6 +252,11 @@
       font-size: 1.24rem
       padding: 0.78rem 2.8rem
   .design
+    background-color: $black-mobile
+    &__section-title
+      color: $light
+    &__subtitle
+      color: $light
     &__card
       margin-bottom: 6.5rem
   .types
@@ -268,7 +314,6 @@
     &__play
       width: 64px
       margin: auto
-      margin-bottom: 68.3px
   .types
     margin-top: -2.3rem
     
@@ -276,8 +321,9 @@
 @media screen and ( max-width: 640px )
   .footer
     background: $black-mobile
-    &__menu
-      display: none
+    &__map
+      min-height: 255px
+      width: 100%
     &__input-group
       flex-basis: 100%
       margin-bottom: 5.3rem
@@ -301,7 +347,7 @@
     &__policy
       justify-content: flex-start
       margin-left: -1.2rem
-      margin-bottom: 5.7rem
+      margin-bottom: 5.4rem
     &__button
       padding: 1.5rem 11.1rem 1.2rem
   .policy
@@ -491,6 +537,18 @@
   .control
     &__video
       min-height: 17.4rem
+
+@media screen and ( max-height: 374px )
+  .menu
+    max-width: 270px
+  .control
+    &__button
+      padding: 1.5rem 8rem 1.3rem 9rem
+  .footer
+    &__button
+      padding: 1.5rem 9.1rem 1.2rem
+  
+
 @media screen and ( max-height: 520px )
   .hero
     &__instagram
