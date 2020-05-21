@@ -152,18 +152,20 @@
       &--projects
         font-size: 1.15rem
   .footer
-    background-color: $black-mobile
+    background: $black-mobile
     &__wrap
-      margin-bottom: 1.414rem
+      margin-bottom: 3.428rem
       background: $black-mobile
     &__block
       display: flex
       flex-wrap: wrap
+      padding-bottom: 0
     &__map
       flex-basis: 100%
       order: 1
+      width: 90%
+      max-height: 356px
       min-height: 255px
-      min-width: 340px
       margin-bottom: 2rem
     &__info
       flex-basis: 100%
@@ -253,6 +255,7 @@
       padding: 0.78rem 2.8rem
   .design
     background-color: $black-mobile
+    padding-bottom: 0
     &__section-title
       color: $light
     &__subtitle
@@ -316,24 +319,33 @@
       margin: auto
   .types
     margin-top: -2.3rem
+  .footer
+    padding-top: 0
+    &__wrap
+      padding-left: 0
+      padding-right: 0
+      padding-bottom: 0
+      background-color: $black-mobile
+      margin-top: 0
+      margin-bottom: 3.9rem
+    &__input-group
+      flex-basis: 100%
+    &__button
+      font-size: 1.25rem
+      padding: 1.5rem 10.8rem 1.2rem
     
      
 @media screen and ( max-width: 640px )
   .footer
     background: $black-mobile
     &__map
-      min-height: 255px
+      max-height: 255px
       width: 100%
     &__input-group
       flex-basis: 100%
       margin-bottom: 5.3rem
       &--full-width
         margin-bottom: 1.9rem
-    &__wrap
-      background-color: $black-mobile
-      margin-top: 0
-      padding-left: 0
-      padding-right: 0
     &__title
       letter-spacing: 0.16rem
       margin-bottom: 4.7rem
@@ -348,8 +360,6 @@
       justify-content: flex-start
       margin-left: -1.2rem
       margin-bottom: 5.4rem
-    &__button
-      padding: 1.5rem 11.1rem 1.2rem
   .policy
     &__label
       &--mobile

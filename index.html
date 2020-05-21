@@ -8,7 +8,6 @@
   <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
   <link rel="stylesheet" href="css/animate.css">
   <link rel="stylesheet" href="css/style.css">
-  <script src="https://api-maps.yandex.ru/2.1/?apikey=165ed247-7fdc-4a6f-8cb2-f5dc6acbdffb&lang=ru_RU" type="text/javascript">
   </script>
   <title>Турецкий ремонт</title>
 </head>
@@ -209,14 +208,14 @@
 
         <form action="#" class="form control__form" id="form">
 
-          <div class="control__input-group control__input-group--name">
-            <label for="user-name" class="label form__label control__label label--dark">Имя</label>
-            <input type="text" name="userName" class="input form__input control__input" id="user-name" placeholder="Как вас зовут:">
+          <div class="input-group control__input-group control__input-group--name">
+            <label for="user-nameControl" class="label form__label control__label label--dark">Имя</label>
+            <input type="text" name="userName" class="input form__input control__input" id="user-nameControl" placeholder="Как вас зовут:">
           </div>
 
-          <div class="control__input-group control__input-group--phone">
-            <label for="user-phone" class="label form__label control__label label--dark">Телефон</label>
-            <input type="tel" name="userPhone" class="input form__input  control__input" id="user-phone" placeholder="Ваш номер телефона:">
+          <div class="input-group control__input-group control__input-group--phone">
+            <label for="user-phoneControl" class="label form__label control__label label--dark">Телефон</label>
+            <input type="tel" name="userPhone" class="input form__input  control__input" id="user-phoneControl" placeholder="Ваш номер телефона:">
           </div>
 
           <button class="button button--primary control__button">Отправить</button> <!-- /.button button--primary modal__button -->
@@ -474,8 +473,8 @@
           </div>
 
           <div class="policy footer__policy">
-            <input type="checkbox" name="policy-checkbox" id="policy-checkbox" class="policy__checkbox" checked>
-            <label for="policy-checkbox" class="policy__label control__policy-label policy__label--center policy__label--mobile">Я соглашаюсь с обработкой данных</label>
+            <input type="checkbox" name="policy-checkbox" id="policy-checkboxQuestions" class="policy__checkbox" checked>
+            <label for="policy-checkboxQuestions" class="policy__label control__policy-label policy__label--center policy__label--mobile">Я соглашаюсь с обработкой данных</label>
           </div>
           <!-- /.policy -->
 
@@ -499,7 +498,8 @@
         </div>
         <!-- /.footer__info -->
   
-        <div class="map footer__map" id="map"></div>
+        <div class="map footer__map" id="map">
+          <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A39c245f79331078a1d3a5ebf57141126ae754f4a993936bd0ba79d6b896ba6a8&amp;source=constructor" width="100%" height="465" style="100vh" frameborder="0"></iframe>
         <!-- /.map footer__map -->
       </div>
 
@@ -507,7 +507,7 @@
     <!-- /.container -->
 
     <div class="footer__menu">
-      <div class="container">
+      <div class="footer__container">
         <div class="menu--bottom">
           <div class="logo menu__logo menu__logo--bottom"><a href="index.html" class="menu__link">Repair Design Project</a></div>
           <nav class="nav menu__nav menu__nav--bottom">
@@ -554,8 +554,8 @@
         </div>
 
         <div class="policy modal__policy">
-          <input type="checkbox" name="policy-checkbox" id="policy-checkbox" class="policy__checkbox" checked>
-          <label for="policy-checkbox" class="policy__label control__policy-label">Я соглашаюсь с обработкой данных</label>
+          <input type="checkbox" name="policy-checkbox" id="policy-checkboxModal" class="policy__checkbox" checked>
+          <label for="policy-checkboxModal" class="policy__label control__policy-label">Я соглашаюсь с обработкой данных</label>
         </div>
         <!-- /.policy -->
 

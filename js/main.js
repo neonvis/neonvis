@@ -112,7 +112,7 @@ $(document).ready(function () {
   //   });
   // });
 
-  $('.modal__form').validate({
+  $('.control__form').validate({
     errorElement: "div",
     errorClass: "invalid",
     rules: {
@@ -121,7 +121,10 @@ $(document).ready(function () {
         minlength: 2,
         maxlength: 15
       },
-      userPhone: "required",
+      userPhone: {
+        required: true,
+        minlength: 18
+      },
       userEmail: {
         required: true,
         email: true
@@ -133,7 +136,10 @@ $(document).ready(function () {
         minlength: "Имя не короче двух букв",
         maxlength: "Имя не более 15 букв",
       },
-      userPhone: "Заполните поле",
+      userPhone: {
+        required: "Заполните поле",
+        minlength: "Номер в формате +7 (000) 000-00-00"
+      },
       userEmail: {
         required: "Заполните поле",
         email: "Введите корректный Email"
@@ -150,10 +156,13 @@ $(document).ready(function () {
         minlength: 2,
         maxlength: 15
       },
-      userPhone: "required",
-      userEmail: {
+      userPhone: {
         required: true,
-        email: true
+        minlength: 18
+      },
+      userQuestion: {
+        required: true,
+        minlength: 10
       }
     },
     messages: {
@@ -162,15 +171,18 @@ $(document).ready(function () {
         minlength: "Имя не короче двух букв",
         maxlength: "Имя не более 15 букв",
       },
-      userPhone: "Заполните поле",
-      userEmail: {
+      userPhone: {
         required: "Заполните поле",
-        email: "Введите корректный Email"
+        minlength: "Номер в формате +7 (000) 000-00-00"
+      },
+      userQuestion: {
+        required: "Заполните поле",
+        minlength: "Минимальноое кол-во символов - 10"
       }
     }
   });
 
-  $('.control__form').validate({
+  $('.modal__form').validate({
     errorElement: "div",
     errorClass: "invalid",
     rules: {
@@ -179,10 +191,9 @@ $(document).ready(function () {
         minlength: 2,
         maxlength: 15
       },
-      userPhone: "required",
-      userEmail: {
+      userPhone: {
         required: true,
-        email: true
+        minlength: 18
       }
     },
     messages: {
@@ -191,50 +202,19 @@ $(document).ready(function () {
         minlength: "Имя не короче двух букв",
         maxlength: "Имя не более 15 букв",
       },
-      userPhone: "Заполните поле",
-      userEmail: {
+      userPhone: {
         required: "Заполните поле",
-        email: "Введите корректный Email"
-      }
+        minlength: "Номер в формате +7 (000) 000-00-00"
+      },
     }
   });
 
+
   // маска для тел
-  $('[type=tel]').mask('+7 (000) 000-00-00', {placeholder: "+7(___)___-__-__"});
+  $('[type=tel]').mask('+7 (000) 000-00-00', {placeholder: "Ваш номер телефона"});
 
   // создание yandex карты
-  ymaps.ready(function () {
-    var myMap = new ymaps.Map('map', {
-            center: [55.751574, 37.573856],
-            zoom: 9
-        }, {
-            searchControlProvider: 'yandex#search'
-        }),
-
-        // Создаём макет содержимого.
-        MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
-            '<div style="color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>'
-        ),
-
-        myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
-            hintContent: 'Собственный значок метки',
-            balloonContent: 'Это красивая метка'
-        }, {
-            // Опции.
-            // Необходимо указать данный тип макета.
-            iconLayout: 'default#image',
-            // Своё изображение иконки метки.
-            iconImageHref: 'img/location.png',
-            // Размеры метки.
-            iconImageSize: [32, 32],
-            // Смещение левого верхнего угла иконки относительно
-            // её "ножки" (точки привязки).
-            iconImageOffset: [-5, -38]
-        });
-    myMap.behaviors.disable('scrollZoom');
-    myMap.geoObjects
-        .add(myPlacemark);
-  }); 
+   
 });
 
  

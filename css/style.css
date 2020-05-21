@@ -377,7 +377,7 @@ template {
 .policy__checkbox {
   opacity: 0;
   visibility: hidden; }
-  .policy__checkbox:checked + .policy__label::before {
+  .policy__checkbox:checked ~ .policy__label::before {
     background: #E3B873 url("../img/check.svg") no-repeat center/0.8rem; }
 
 .policy__label {
@@ -397,11 +397,17 @@ template {
   .policy__label--center {
     justify-content: center; }
 
-label.invalid {
-  color: #ffffff; }
-
 input.invalid {
   border-bottom: 1px solid red; }
+
+.input-group {
+  position: relative; }
+
+div.invalid {
+  position: absolute;
+  bottom: -1.2rem;
+  left: 0;
+  color: inherit; }
 
 .container {
   width: 90%;
@@ -885,7 +891,8 @@ img {
 .control__input-group {
   display: flex;
   flex-direction: column;
-  flex-basis: 30%; }
+  flex-basis: 30%;
+  color: #131313; }
 
 .control__label {
   margin-bottom: -0.45rem;
@@ -1041,7 +1048,12 @@ img {
 
 .footer {
   background: #131313 url("../img/footer-bg.jpg") no-repeat center/cover;
-  padding-top: 3rem; }
+  padding-top: 3rem;
+  position: relative; }
+  .footer__container {
+    width: 90%;
+    max-width: 1256px;
+    margin: auto; }
   .footer__wrap {
     position: relative;
     background: #131313 url("../img/bg-lines.svg") no-repeat center/cover;
@@ -1097,7 +1109,11 @@ img {
     padding: 1.2rem 4.2rem 1rem;
     font-size: 1.14rem; }
   .footer__menu {
-    background-color: #131313; }
+    background-color: #131313;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%; }
   .footer__info {
     width: 100%;
     max-width: 41.42rem;
@@ -1105,7 +1121,7 @@ img {
     flex-direction: column;
     align-items: center;
     margin: auto;
-    margin-bottom: 3.1rem;
+    margin-bottom: 2.7rem;
     padding: 0 4.4rem; }
   .footer__text {
     font-family: 'Yeseva One', cursive;
@@ -1120,21 +1136,26 @@ img {
     cursor: pointer; }
   .footer__img {
     margin: 0 8.2px 0 5.5px; }
-  .footer__map {
-    margin: auto;
-    margin-bottom: 5rem;
-    max-width: 66.07rem;
-    min-height: 465px; }
   .footer__block {
+    position: relative;
     width: 100%;
     margin: 0 auto;
-    padding: 0; }
+    padding: 0;
+    padding-bottom: 9.7rem; }
+  .footer__map {
+    width: 100%;
+    margin: auto;
+    margin-bottom: 4.5rem;
+    max-width: 925px;
+    max-height: 465px;
+    min-height: 255px;
+    overflow: hidden; }
 
 .menu--bottom {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 3.25rem 0 2.885rem; }
+  padding: 3.25rem 0 3.385rem; }
 
 .menu__logo--bottom {
   margin-left: 0; }
@@ -1376,18 +1397,20 @@ img {
   .section-title__text--projects {
     font-size: 1.15rem; }
   .footer {
-    background-color: #252525; }
+    background: #252525; }
     .footer__wrap {
-      margin-bottom: 1.414rem;
+      margin-bottom: 3.428rem;
       background: #252525; }
     .footer__block {
       display: flex;
-      flex-wrap: wrap; }
+      flex-wrap: wrap;
+      padding-bottom: 0; }
     .footer__map {
       flex-basis: 100%;
       order: 1;
+      width: 90%;
+      max-height: 356px;
       min-height: 255px;
-      min-width: 340px;
       margin-bottom: 2rem; }
     .footer__info {
       flex-basis: 100%;
@@ -1472,7 +1495,8 @@ img {
     font-size: 1.24rem;
     padding: 0.78rem 2.8rem; }
   .design {
-    background-color: #252525; }
+    background-color: #252525;
+    padding-bottom: 0; }
     .design__section-title {
       color: #ffffff; }
     .design__subtitle {
@@ -1545,24 +1569,33 @@ img {
     width: 64px;
     margin: auto; }
   .types {
-    margin-top: -2.3rem; } }
+    margin-top: -2.3rem; }
+  .footer {
+    padding-top: 0; }
+    .footer__wrap {
+      padding-left: 0;
+      padding-right: 0;
+      padding-bottom: 0;
+      background-color: #252525;
+      margin-top: 0;
+      margin-bottom: 3.9rem; }
+    .footer__input-group {
+      flex-basis: 100%; }
+    .footer__button {
+      font-size: 1.25rem;
+      padding: 1.5rem 10.8rem 1.2rem; } }
 
 @media screen and (max-width: 640px) {
   .footer {
     background: #252525; }
     .footer__map {
-      min-height: 255px;
+      max-height: 255px;
       width: 100%; }
     .footer__input-group {
       flex-basis: 100%;
       margin-bottom: 5.3rem; }
       .footer__input-group--full-width {
         margin-bottom: 1.9rem; }
-    .footer__wrap {
-      background-color: #252525;
-      margin-top: 0;
-      padding-left: 0;
-      padding-right: 0; }
     .footer__title {
       letter-spacing: 0.16rem;
       margin-bottom: 4.7rem;
@@ -1577,8 +1610,6 @@ img {
       justify-content: flex-start;
       margin-left: -1.2rem;
       margin-bottom: 5.4rem; }
-    .footer__button {
-      padding: 1.5rem 11.1rem 1.2rem; }
   .policy__label--mobile {
     font-size: 1.2rem;
     letter-spacing: 0.8px; } }

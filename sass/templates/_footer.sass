@@ -1,6 +1,11 @@
 .footer
   background: $dark url('../img/footer-bg.jpg') no-repeat center / cover
   padding-top: 3rem
+  position: relative
+  &__container
+    width: 90%
+    max-width: 1256px
+    margin: auto
   &__wrap
     position: relative
     background: $dark url('../img/bg-lines.svg') no-repeat center / cover
@@ -58,6 +63,10 @@
     font-size: 1.14rem
   &__menu
     background-color: $dark
+    position: absolute
+    left: 0
+    bottom: 0
+    width: 100%
   &__info
     width: 100%
     max-width: 41.42rem
@@ -65,7 +74,7 @@
     flex-direction: column
     align-items: center
     margin: auto
-    margin-bottom: 3.1rem
+    margin-bottom: 2.7rem
     padding: 0 4.4rem
   &__text
     font-family: 'Yeseva One', cursive
@@ -80,21 +89,26 @@
     cursor: pointer
   &__img
     margin: 0 8.2px 0 5.5px
-  &__map
-    margin: auto
-    margin-bottom: 5rem
-    max-width: 66.07rem
-    min-height: 465px
   &__block
+    position: relative
     width: 100%
     margin: 0 auto
     padding: 0
+    padding-bottom: 9.7rem
+  &__map
+    width: 100%
+    margin: auto
+    margin-bottom: 4.5rem
+    max-width: 925px
+    max-height: 465px
+    min-height: 255px
+    overflow: hidden
 .menu
   &--bottom
     display: flex
     justify-content: space-between
     align-items: center
-    padding: 3.25rem 0 2.885rem
+    padding: 3.25rem 0 3.385rem
 .menu
     &__logo
       &--bottom
