@@ -409,6 +409,21 @@ div.invalid {
   left: 0;
   color: inherit; }
 
+.thanks-link {
+  display: block;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  margin-top: 2rem;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  transition: color 0.3s, border 0.3s; }
+  .thanks-link:hover {
+    color: #E3B873;
+    border: 1px solid #E3B873; }
+
 .container {
   width: 90%;
   max-width: 1256px;

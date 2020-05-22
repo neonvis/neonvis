@@ -76,9 +76,16 @@ div.invalid
   left: 0
   color: inherit
 .thanks-link
+  display: block
+  padding-top: 1rem
+  padding-bottom: 1rem
+  margin-top: 2rem
+  text-align: center
   text-decoration: none
   text-transform: uppercase
-  color: $primary
-  transition: color 0.3s
+  color: $light
+  border: 1px solid $light
+  transition: color 0.3s, border 0.3s
   &:hover
-    color: $light
+    color: $primary
+    border: 1px solid $primary
