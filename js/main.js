@@ -112,7 +112,7 @@ $(document).ready(function () {
   //   });
   // });
 
-  $('.control__form').validate({
+  $('.modal__form').validate({
     errorElement: "div",
     errorClass: "invalid",
     rules: {
@@ -144,6 +144,18 @@ $(document).ready(function () {
         required: "Заполните поле",
         email: "Введите корректный Email"
       }
+    },
+    submitHandler: function(form) {
+      $.ajax({
+        type: "POST",
+        url: "send.php",
+        data: $(form).serialize(),
+        success: function (response) {
+          alert('Форма отправлена');
+          $(form)[0].reset();
+          modal.removeClass('modal--visible');
+        }
+      });
     }
   });
 
@@ -179,10 +191,22 @@ $(document).ready(function () {
         required: "Заполните поле",
         minlength: "Минимальноое кол-во символов - 10"
       }
+    },
+    submitHandler: function(form) {
+      $.ajax({
+        type: "POST",
+        url: "send.php",
+        data: $(form).serialize(),
+        success: function (response) {
+          alert('Форма отправлена');
+          $(form)[0].reset();
+          modal.removeClass('modal--visible');
+        }
+      });
     }
   });
 
-  $('.modal__form').validate({
+  $('.control__form').validate({
     errorElement: "div",
     errorClass: "invalid",
     rules: {
@@ -205,7 +229,19 @@ $(document).ready(function () {
       userPhone: {
         required: "Заполните поле",
         minlength: "Номер в формате +7 (000) 000-00-00"
-      },
+      }
+    },
+    submitHandler: function(form) {
+      $.ajax({
+        type: "POST",
+        url: "send.php",
+        data: $(form).serialize(),
+        success: function (response) {
+          alert('Форма отправлена');
+          $(form)[0].reset();
+          modal.removeClass('modal--visible');
+        }
+      });
     }
   });
 
