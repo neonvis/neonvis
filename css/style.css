@@ -1054,7 +1054,7 @@ img {
   flex-basis: 60%; }
 
 .team {
-  padding-bottom: 30rem;
+  padding-bottom: 2.8rem;
   margin-top: -33.4rem; }
   .team__section-title {
     color: #ffffff; }
@@ -1156,9 +1156,103 @@ img {
       margin: 0 auto;
       margin-bottom: 0.8rem; }
 
+.clients {
+  padding-bottom: 30rem; }
+  .clients__subtitle {
+    margin-top: 1.5rem;
+    margin-bottom: 4.7rem;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 23rem;
+    text-align: center;
+    font-size: 1.4rem;
+    line-height: 140%;
+    letter-spacing: 0.02rem; }
+  .clients__name {
+    font-family: 'Yeseva One', cursive;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.285rem;
+    line-height: 1.642rem;
+    color: #181818; }
+  .clients__cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; }
+  .clients__card {
+    flex-basis: 32%; }
+  .clients__card-2 {
+    padding-left: 0; }
+  .clients__card-3 {
+    padding-left: 0.4rem; }
+  .clients__info {
+    padding-left: 2.2rem; }
+  .clients__photo-wrap {
+    position: relative;
+    display: inline-block;
+    width: 76px;
+    height: 76px;
+    border-radius: 50%;
+    overflow: hidden; }
+  .clients__photo {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0; }
+  .clients__name {
+    display: inline-block;
+    height: 76px;
+    vertical-align: top;
+    padding-left: 1.4rem;
+    margin-bottom: 0; }
+  .clients__feedback {
+    margin: 0;
+    padding: 0 3.3rem 0 2.3rem;
+    margin-bottom: 3rem;
+    font-style: normal;
+    font-weight: normal;
+    height: 244.5px;
+    font-size: 1.071rem;
+    line-height: 186%;
+    color: #959595;
+    overflow: scroll; }
+  .clients__tag {
+    background-color: #E3B873;
+    display: inline-flex;
+    align-items: center; }
+
+.tag__img {
+  width: 32px;
+  height: 32px;
+  margin-right: 1rem; }
+
+.tag__info {
+  font-family: 'Yeseva One', cursive;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.17rem;
+  line-height: 1.714rem;
+  color: #ffffff; }
+
+.tag__area {
+  margin-left: 0.8rem;
+  padding: 0.8rem 1.5rem 0.8rem 1.4rem; }
+
+.tag__day {
+  padding: 0.8rem 2.1rem 0.8rem 1.1rem; }
+
+.tag__area-2 {
+  margin-left: 1rem;
+  padding: 0.8rem 1.4rem 0.8rem 1.5rem; }
+
+.tag__day-2 {
+  padding: 0.8rem 1.8rem 0.8rem 1.1rem; }
+
 .footer {
   background: #131313 url("../img/footer-bg.jpg") no-repeat center/cover;
   padding-top: 3rem;
+  margin-top: -4.8rem;
   position: relative; }
   .footer__container {
     width: 90%;
@@ -1513,6 +1607,14 @@ img {
     flex-basis: 25%; }
   .team__text {
     width: 90%; }
+  .clients__name {
+    display: block; }
+  .clients__tag {
+    display: flex;
+    padding-left: 1rem; }
+  .tag__area {
+    margin-left: 0;
+    margin-bottom: 1rem; }
   .footer {
     background: #252525; }
     .footer__wrap {
@@ -1648,7 +1750,7 @@ img {
         display: none; }
     .team__text {
       width: 80%;
-      max-width: 30rem;
+      max-width: 26rem;
       margin-top: -6.7rem; }
     .team__name {
       margin-top: 1.8rem;
@@ -1729,6 +1831,11 @@ img {
     margin: auto; }
   .types {
     margin-top: -2.3rem; }
+  .steps {
+    min-height: 800px;
+    background: #252525; }
+  .clients {
+    display: none; }
   .footer {
     padding-top: 0;
     margin-top: -3rem; }
@@ -1938,9 +2045,18 @@ img {
   .img__wrapper::after {
     opacity: 0; }
   .control__video {
-    min-height: 17.4rem; } }
+    min-height: 17.4rem; }
+  .team__img-wrap {
+    min-height: 35rem; }
+  .team__text {
+    max-width: 18.571rem; } }
 
-@media screen and (max-height: 375px) {
+@media screen and (max-width: 375px) {
+  .control__button {
+    display: block;
+    width: 100%;
+    padding-top: 1.4rem;
+    padding-bottom: 1.3rem; }
   .team {
     margin-top: -34.2rem;
     padding-bottom: 0;
@@ -1958,6 +2074,7 @@ img {
       flex-basis: 100%;
       margin-bottom: 4.5rem; }
     .team__img-wrap {
+      width: 100%;
       max-width: 25.057rem;
       margin-left: 10%;
       min-height: 29.8rem; }
@@ -1966,7 +2083,7 @@ img {
       .team__info::before {
         display: none; }
     .team__text {
-      width: 68.9%;
+      max-width: 19.4rem;
       margin-left: 19.5%;
       margin-top: -6.7rem; }
     .team__name {
@@ -1980,7 +2097,18 @@ img {
       padding-top: 1.1rem;
       padding-bottom: 1.1rem;
       margin-bottom: 0;
-      font-size: 1.1rem; } }
+      font-size: 1.1rem; }
+  .footer__button {
+    display: block;
+    width: 100%;
+    padding-top: 1.5rem;
+    padding-bottom: 1.2rem; } }
+
+@media screen and (max-width: 360px) {
+  .team__img-wrap {
+    max-width: 22rem; }
+  .team__text {
+    margin-left: 14.5%; } }
 
 @media screen and (max-height: 374px) {
   .menu {

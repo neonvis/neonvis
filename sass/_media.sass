@@ -158,6 +158,16 @@
       flex-basis: 25%
     &__text
       width: 90%
+  .clients
+    &__name
+      display: block
+    &__tag
+      display: flex
+      padding-left: 1rem
+  .tag
+    &__area
+      margin-left: 0
+      margin-bottom: 1rem
   .footer
     background: $black-mobile
     &__wrap
@@ -298,7 +308,7 @@
         display: none
     &__text
       width: 80%
-      max-width: 30rem
+      max-width: 26rem
       margin-top: -6.7rem
     &__name
       margin-top: 1.8rem
@@ -369,6 +379,11 @@
       margin: auto
   .types
     margin-top: -2.3rem
+  .steps
+    min-height: 800px
+    background: $black-mobile
+  .clients
+    display: none
   .footer
     padding-top: 0
     margin-top: -3rem
@@ -598,9 +613,20 @@
   .control
     &__video
       min-height: 17.4rem
+  .team
+    &__img-wrap
+      min-height: 35rem
+    &__text
+      max-width: 18.571rem
   
 
-@media screen and ( max-height: 375px )
+@media screen and ( max-width: 375px )
+  .control
+    &__button
+      display: block
+      width: 100%
+      padding-top: 1.4rem
+      padding-bottom: 1.3rem
   .team
     margin-top: -34.2rem
     padding-bottom: 0
@@ -618,6 +644,7 @@
       flex-basis: 100%
       margin-bottom: 4.5rem
     &__img-wrap
+      width: 100%
       max-width: 25.057rem
       margin-left: 10%
       min-height: 29.8rem
@@ -626,7 +653,7 @@
       &::before
         display: none
     &__text
-      width: 68.9%
+      max-width: 19.4rem
       margin-left: 19.5%
       margin-top: -6.7rem
     &__name
@@ -641,6 +668,19 @@
       padding-bottom: 1.1rem
       margin-bottom: 0
       font-size: 1.1rem
+  .footer
+    &__button
+      display: block
+      width: 100%
+      padding-top: 1.5rem
+      padding-bottom: 1.2rem
+  
+@media screen and ( max-width: 360px )
+  .team
+    &__img-wrap
+      max-width: 22rem
+    &__text
+      margin-left: 14.5%
 
 @media screen and ( max-height: 374px )
   .menu
